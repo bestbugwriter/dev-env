@@ -1,3 +1,4 @@
 FROM tensorflow/tensorflow:2.0.0rc0-gpu-py3
 RUN pip install pillow && pip3 install https://github.com/OlafenwaMoses/ImageAI/releases/download/2.0.1/imageai-2.0.1-py3-none-any.whl  && pip install matplotlib
-RUN apt install libopencv-dev -y
+RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
+RUN apt install libopencv-dev python-opencv -y
