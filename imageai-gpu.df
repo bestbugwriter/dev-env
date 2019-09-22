@@ -2,5 +2,4 @@ FROM tensorflow/tensorflow:1.13.2-gpu-py3
 
 RUN ln -fs /usr/share/zoneinfo/Asia/Shanghai /etc/localtime
 RUN apt install libopencv-dev -y
-RUN pip -U tensorflow keras opencv-python
-RUN pip install pillow matplotlib imageai
+RUN pip install keras opencv-python pillow matplotlib imageai
