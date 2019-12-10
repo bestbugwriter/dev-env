@@ -1,3 +1,3 @@
 #!/bin/sh
 
-docker build . -t nwpu/hive:3.1.2
+docker build . -t nwpu/hive:1.2.1
